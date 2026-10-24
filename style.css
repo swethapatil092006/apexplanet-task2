@@ -1,0 +1,228 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f7f3ff;
+    color: #2d2140;
+}
+
+/* Navigation */
+.navbar {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: 500;
+    margin-left: 20px;
+    transition: 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffe082 !important;
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        135deg,
+        #6a11cb,
+        #2575fc,
+        #ec4899
+    );
+    color: white;
+    padding: 80px 20px;
+}
+
+.hero-section h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.hero-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.custom-btn {
+    background: linear-gradient(135deg, #6a11cb, #ec4899);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.custom-btn:hover {
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(106, 17, 203, 0.3);
+}
+
+/* Hero Button */
+.hero-section .custom-btn {
+    background: white;
+    color: #6a11cb;
+}
+
+.hero-section .custom-btn:hover {
+    background: #ffe082;
+    color: #2d2140;
+}
+
+/* Authentication Sections */
+.auth-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+}
+
+/* Auth Cards */
+.auth-card {
+    width: 100%;
+    max-width: 450px;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+    transition: 0.3s ease;
+}
+
+.auth-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(106, 17, 203, 0.18);
+}
+
+.auth-card h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #6a11cb;
+}
+
+/* Form Labels */
+.form-label,
+.auth-card label {
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+
+/* Form Inputs */
+.form-control {
+    border: 2px solid #e2d8f5;
+    border-radius: 10px;
+    padding: 12px;
+    transition: 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 0 0.2rem rgba(106, 17, 203, 0.15);
+}
+
+/* Password Wrapper */
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper .form-control {
+    padding-right: 50px;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Form Messages */
+.form-message {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 500;
+    min-height: 24px;
+}
+
+/* Footer */
+footer {
+    background: #211536;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+
+    .hero-section h1 {
+        font-size: 38px;
+    }
+
+    .hero-section p {
+        font-size: 16px;
+    }
+
+    .nav-link {
+        margin-left: 0;
+        padding: 10px 0 !important;
+    }
+
+    .auth-card {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .hero-section {
+        padding: 60px 15px;
+    }
+
+    .hero-section h1 {
+        font-size: 32px;
+    }
+
+    .auth-section {
+        padding: 60px 15px;
+    }
+
+    .auth-card {
+        padding: 25px 18px;
+    }
+}
